@@ -1,0 +1,77 @@
+ul li{
+    cursor: pointer;
+}
+
+.sidebar{
+    position: fixed;
+    background-color: #01134E;
+    width: 5%;
+    height: 100%;
+}
+
+.logo{
+    position: absolute;
+    left: 29%;
+    right: 63.98%;
+    top: 1.8%;
+    bottom: 93.01%;
+    cursor: pointer;
+}
+
+.sidebar__logo-schedule{
+    position: absolute;
+    left: 37.63%;
+    right: 68.94%;
+    top: 16.48%;
+    bottom: 80.84%;
+    z-index: 1;
+}
+
+.notification{
+    position: relative;
+    width: 19px;
+    height: 20px;
+    left: 45px;
+    top: 145px;
+    z-index: 2;
+}
+
+.sidebar__logo-prof{
+    position: absolute;
+    left: 37.63%;
+    right: 69.57%;
+    top: 25.84%;
+    bottom: 71.77%;
+}
+
+.sidebar__logo-settings{
+    position: absolute;
+    left: 37.63%;
+    right: 68.94%;
+    top: 34.95%;
+    bottom: 62.45%;
+}
+
+.sidebar__logo-group{
+    position: absolute;
+    left: 37.63%;
+    right: 68.94%;
+    top: 44.18%;
+    bottom: 53.19%;
+}
+
+.sidebar__logo-mail{
+    position: absolute;
+    left: 37.63%;
+    right: 68.94%;
+    top: 53.45%;
+    bottom: 44.45%;
+}
+
+.rectangle{
+    position: absolute;
+    left: 0%;
+    right: 99.48%;
+    top: 51.8%;
+    bottom: 57.03%;
+}

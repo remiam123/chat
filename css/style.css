@@ -19,6 +19,7 @@ input{
     outline: none;
     border: none;
     font-size: 14px;
+    opacity: 0.3;
 }
 
 .header{
@@ -251,7 +252,7 @@ input{
 }
 
 .mail__send{
-    padding-left: 10px;
+    padding-left: 45px;
     width: 83%;
 }
 

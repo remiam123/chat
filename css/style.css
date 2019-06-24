@@ -15,6 +15,12 @@ a{
     color: inherit;
 }
 
+input{
+    outline: none;
+    border: none;
+    font-size: 14px;
+}
+
 .header{
     display: flex;
     flex-direction: row;
@@ -30,6 +36,16 @@ a{
 
 .header__user-profile{
     align-self: flex-end;
+    cursor: pointer;
+}
+
+.profile__name{
+    margin-right: 4px;
+}
+
+.header__arrow{
+    margin-left: 8px;
+    margin-right: 8px;
 }
 
 .profile__img{
@@ -52,23 +68,210 @@ a{
 
 .center__messages{
     width: 35%;
-    
+    height: 75%;
 }
 
-.message__strong{
-    display: inline;
+.messages__item{
+    padding: 13px 40px;
+    position: relative;
+    height: 22.2%;
+    cursor: pointer;
+}
+
+.messages__item-active{
+    background: #FFFFFF;
+    box-shadow: 0px 5px 5px rgba(190, 200, 212, 0.2), 0px -5px 5px rgba(224, 224, 224, 0.15);
+}
+
+.message__name{
+    position: absolute;
+    top: 32px;
+    left: 115px;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.571429px;
+}
+
+.message__name-online::after{
+    content: "";
+    padding: 3px;
+    position: absolute;
+    background-color: #0ad69c;
+    border-radius: 50%;
+    right: -10px;
+    top: 1px;
+}
+
+.message__mesg{
+    position: absolute;
+    top: 60px;
+    left: 115px;
+    color: #8089a6;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.message__time{
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    color: #8089a6;
+    font-size: 12px;
+    opacity: 0.5;
 }
 
 .message__avatar{
-    vertical-align: middle;
-    
+    position: absolute;
+    top: 25px;
+    width: 65px;
+    height: 65px;
 }
 
-.center__messages-item{
-    padding: 20px 40px;
-    height: 22.2%;
+.message__mute{
+    position: absolute;
+    top: 39px;
+    left: 240px;
 }
 
-.center__chat-window{
+.chat{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-left: 1px solid #EDF0F4;
+}
+
+.chat__search{
+    display: flex;
+    justify-content: flex-start;
+    height: 50px;
+    border-bottom: 1px solid #f5f6f9;
+    background-color: #fff;
+}
+
+.chat__img{
+    margin-right: 20px;
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+.chat__input{
+    width: 99%;
+}
+
+.chat__window{
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+    /* overflow-y: scroll; */
     height: 650px;
+    font-size: 14px;
+    line-height: 20px;
+} 
+
+.mail::-webkit-scrollbar{
+    width: 8px;
+    background: #F5F5F7;
+    mix-blend-mode: normal;
+    opacity: 0.05;
+    border-radius: 4px;
+    margin: 6px;
+}
+
+.mail::-webkit-scrollbar-thumb{
+    background: #DFE4F2;
+    mix-blend-mode: normal;
+    opacity: 0.1;
+    border-radius: 4px;
+}
+
+.mail{
+    min-height: 100px;
+    overflow-y: scroll;
+    margin: 5px;
+}
+
+.mail__inbox{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 10px;
+}
+
+.inbox__vector{
+    position: absolute;
+    left: -13px;
+    bottom: -1px;
+    transform: matrix(-0.99, 0.11, 0.11, 0.99, 0, 0);
+}
+
+.inbox__photo{
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+}
+
+.mail__outbox{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.outbox__vector{
+    position: absolute;
+    right: -12px;
+    bottom: -1px;
+}
+
+.mail__text{
+    background-color: #F7F9FC;
+    border-radius: 5px;
+    width: 350px;
+    padding: 15px 65px 15px 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+
+.mail__time{
+    display: block;
+    font-size: 12px;
+    color: #9BA0AD;
+    position: absolute;
+    right: 12px;
+    bottom: 5px;
+}
+
+.mail__input{
+    height: 61px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 20px rgba(153, 163, 174, 0.146541);
+}
+
+.mail__send{
+    padding-left: 10px;
+    width: 83%;
+}
+
+.send{
+    display: inline-block;
+    margin-top: 10px;
+    width: 36px;
+    height: 36px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 15px rgba(153, 163, 174, 0.259256);
+    border-radius: 7px;
+}
+
+.send__img{
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.send__img-active{
+    width: 30px;
+    height: 35px;
+    padding-left: 5px;
 }

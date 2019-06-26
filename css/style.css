@@ -69,13 +69,13 @@ input{
 
 .center__messages{
     width: 35%;
-    height: 75%;
+    height: 100%;
 }
 
 .messages__item{
-    padding: 13px 40px;
+    padding: 30px 40px;
     position: relative;
-    height: 22.2%;
+    height: 16.5%;
     cursor: pointer;
 }
 
@@ -85,14 +85,18 @@ input{
 }
 
 .message__name{
-    position: absolute;
-    top: 32px;
-    left: 115px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 8px;
     font-family: 'Exo 2', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.571429px;
+}
+
+.message__name-online{
+    position: relative;
 }
 
 .message__name-online::after{
@@ -106,9 +110,7 @@ input{
 }
 
 .message__mesg{
-    position: absolute;
-    top: 60px;
-    left: 115px;
+    display: block;
     color: #8089a6;
     font-size: 14px;
     line-height: 18px;
@@ -124,16 +126,16 @@ input{
 }
 
 .message__avatar{
-    position: absolute;
-    top: 25px;
+    float: left;
+    margin-right: 14px;
     width: 65px;
     height: 65px;
 }
 
 .message__mute{
     position: absolute;
-    top: 39px;
-    left: 240px;
+    top: 47px;
+    left: 245px;
 }
 
 .chat{
@@ -167,7 +169,6 @@ input{
     display: flex;
     justify-content: flex-end;
     flex-flow: column;
-    /* overflow-y: scroll; */
     height: 650px;
     font-size: 14px;
     line-height: 20px;

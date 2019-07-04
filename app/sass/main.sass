@@ -39,15 +39,17 @@ ul li
 .line
   fill: none
   transition: stroke-dasharray 400ms, stroke-dashoffset 400ms
-  stroke: #000
+  stroke: #8089a6
   stroke-width: 5.5
   stroke-linecap: round
 
 .hamRotate.active 
   transform: rotate(45deg)
+  stroke: #8089a6
 
 .hamRotate180.active
   transform: rotate(180deg)
+  stroke: #8089a6
 
 .ham2 .top 
   stroke-dasharray: 40 121
@@ -57,24 +59,31 @@ ul li
 
 .ham2.active .top 
   stroke-dashoffset: -102px
+  stroke: #8089a6
+
+.ham2.active .middle
+    stroke: #8089a6
 
 .ham2.active .bottom 
   stroke-dashoffset: -102px
+  stroke: #8089a6
 
 .nawBtn
     display: none
     @include small-mobile
         display: inline
         position: absolute
-        top: 3px
-        left: 8px
+        z-index: 3
+        top: 2px
+        left: 14px
         width: 50px
         height: 50px
     @include mobile
         display: inline
         position: absolute
+        z-index: 3
         top: -5px
-        left: 0px
+        left: 5px
         width: 70px
         height: 70px
 
@@ -84,9 +93,19 @@ ul li
     width: 80px
     height: 100%
     @include small-mobile
-        display: none
+        margin-left: -250px
+        transition: 1s
+        z-index: 2
     @include mobile
-        display: none
+        margin-left: -250px
+        transition: 1s
+        z-index: 2
+
+.showSidebar
+    transition: all .3s
+    margin-left: 0px
+    padding-top: 60px
+    z-index: 2
 
 .logo
     margin-top: 18px
@@ -249,12 +268,15 @@ ul li
     right: -10px
     top: 1px
     @include small-mobile
+        padding: 5px
         top: -15px
         right: -65px
     @include mobile
+        padding: 5px
         top: -15px
         right: -65px
     @include small-tablet
+        padding: 5px
         top: -15px
         right: -65px
 

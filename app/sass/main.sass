@@ -83,7 +83,7 @@ ul li
         position: absolute
         z-index: 3
         top: -5px
-        left: 5px
+        left: 9px
         width: 70px
         height: 70px
 
@@ -97,6 +97,7 @@ ul li
         transition: 1s
         z-index: 2
     @include mobile
+        width: 90px
         margin-left: -250px
         transition: 1s
         z-index: 2
@@ -147,9 +148,10 @@ ul li
     margin-left: 80px
 
     &__user-profile
-        // align-self: flex-end
         cursor: pointer
         @include small-mobile
+            display: none
+        @include mobile
             display: none
 
     &__arrow
@@ -160,11 +162,11 @@ ul li
         width: 100%
         font-size: 15px
         margin: 0
-        padding: 15px 15px 20px 60px
+        padding: 15px 15px 20px 85px
     @include mobile
         width: 100%
         margin-left: 0px
-        padding: 20px 15px 20px 70px
+        padding: 20px 15px 20px 95px
     @include desktop-small
         width: 100%
         margin: 0
@@ -468,7 +470,7 @@ ul li
         @include small-mobile
             margin-right: 12px
         @include mobile
-            margin-right: 15px
+            margin-right: 12px
         @include small-tablet
             margin-right: 15px
 
